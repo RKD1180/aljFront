@@ -1,0 +1,45 @@
+.marquee{
+    background-color: #1976D2;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+.marqueeContainer{
+    border-bottom: 1px solid black;
+    border-top: 1px solid red;
+    margin-bottom: 10px;
+}
+.cardMenuItem{
+    display: flex;
+    align-items: center;
+    
+}
+.menuItem{
+    text-decoration: none;
+    color: black;
+}
+.menuItem:hover{
+    text-decoration: underline;
+}
+
+.ItemContainer{
+    margin-bottom: 2rem;
+}
+/* style={{ border: "1px solid red", padding: 4 }} */
+.menuPaper{
+    border: 1px solid red;
+    padding: 1rem 1rem 2rem;
+}
+.nameHead{
+    background-color: #1976D2;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 0px;
+    
+}

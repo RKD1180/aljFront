@@ -1,0 +1,17 @@
+.ficon{
+    color: white;
+    
+}
+.ficon:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.fsubtitle{
+    color: white;
+}
+.footerMenuItem{
+    color: white;
+    text-decoration: none;
+    display: block;
+}

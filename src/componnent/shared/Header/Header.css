@@ -1,0 +1,27 @@
+.headerMenuItem{
+    color: white !important;
+    text-decoration: none !important;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.2s;
+    
+}
+.headerMenuItem:hover{
+    background-color: white;
+    color: black !important;
+
+}
+.mobileMenuItem{
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.2s;
+    display: block;
+}
