@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
-import { Box, Container, Grid, Paper } from "@mui/material";
+import { Box, Button, Container, Grid, Paper } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import InstituteHeader from "../../componnent/InstituteHeader/InstituteHeader";
 import Header from "../../componnent/shared/Header/Header";
@@ -11,6 +11,7 @@ import chir from "../../asset/image/chir.jpg";
 import prin from "../../asset/image/prin.png";
 import Footer from "../../componnent/shared/Footer/Footer";
 import Blog from "../../componnent/Blog/Blog";
+import "animate.css";
 
 const Home = () => {
   const [blog, setBlog] = useState([]);
@@ -59,10 +60,72 @@ const Home = () => {
             </marquee>
           </div>
         </Box>
+
         <Grid container spacing={2} sx={{ mt: 3, mb: 3 }}>
           <Grid item xs={12} md={9}>
+            <Grid container spacing={3}>
+              <Grid
+                item
+                xs={12}
+                md={12}
+                sx={{ mb: 3 }}
+                className="animate__animated animate__fadeInUp"
+              >
+                <Paper elevation={3} className="noticePaper">
+                  <h2 style={{ marginLeft: 15 }}>Notice</h2>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        JCMS Class Routine Summer-2022
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        10th_Class Routine, Summer-2022
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        9th_Class Routine, Summer-2022
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        9th_Class Routine, Summer-2022
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        9th_Class Routine, Summer-2022
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box style={{ display: "flex", justifyContent: "right" }}>
+                    <Button variant="outlined">All Notice</Button>
+                  </Box>
+                </Paper>
+              </Grid>
+            </Grid>
             <Grid container spacing={2}>
-              <Grid item xs={12} md={4}>
+              <Grid
+                className="animate__animated animate__fadeInLeft"
+                item
+                xs={12}
+                md={4}
+              >
                 <Paper elevation={3} className="menuPaper">
                   <h2 style={{ marginLeft: 15 }}>Campus</h2>
                   <Box className="cardMenuItem">
@@ -83,7 +146,12 @@ const Home = () => {
                   </Box>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid
+                className="animate__animated animate__fadeInDown"
+                item
+                xs={12}
+                md={4}
+              >
                 <Paper elevation={3} className="menuPaper">
                   <h2 style={{ marginLeft: 15 }}>Faculty Member</h2>
                   <Box className="cardMenuItem">
@@ -104,7 +172,13 @@ const Home = () => {
                   </Box>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={4}>
+
+              <Grid
+                className="animate__animated animate__fadeInRight"
+                item
+                xs={12}
+                md={4}
+              >
                 <Paper elevation={3} className="menuPaper">
                   <h2 style={{ marginLeft: 15 }}>Notice</h2>
                   <Box className="cardMenuItem">
@@ -125,6 +199,102 @@ const Home = () => {
                   </Box>
                 </Paper>
               </Grid>
+
+              <Grid
+                className="animate__animated animate__fadeInLeft"
+                item
+                xs={12}
+                md={4}
+              >
+                <Paper elevation={3} className="menuPaper">
+                  <h2 style={{ marginLeft: 15 }}>Resources</h2>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Computer Lab
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Science Lab
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Library/Canteen/Cafeteria
+                      </Link>
+                    </span>
+                  </Box>
+                </Paper>
+              </Grid>
+
+              <Grid
+                className="animate__animated animate__fadeInDownBig"
+                item
+                xs={12}
+                md={4}
+              >
+                <Paper elevation={3} className="menuPaper">
+                  <h2 style={{ marginLeft: 15 }}>Result</h2>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Academic Exam Result
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Board Exam Result
+                      </Link>
+                    </span>
+                  </Box>
+                </Paper>
+              </Grid>
+              <Grid
+                className="animate__animated animate__fadeInRightBig"
+                item
+                xs={12}
+                md={4}
+              >
+                <Paper elevation={3} className="menuPaper">
+                  <h2 style={{ marginLeft: 15 }}>Facilities</h2>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Education Loan Department
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Transport
+                      </Link>
+                    </span>
+                  </Box>
+                  <Box className="cardMenuItem">
+                    <ArrowRightIcon />
+                    <span>
+                      <Link to="/" className="menuItem">
+                        Hostel
+                      </Link>
+                    </span>
+                  </Box>
+                </Paper>
+              </Grid>
               <Box sx={{ ml: 2, mt: 2 }}>
                 <h2 style={{ marginLeft: 10 }}>Blog</h2>
                 <Grid container spacing={2}>
@@ -137,6 +307,8 @@ const Home = () => {
               </Box>
             </Grid>
           </Grid>
+
+          {/* Teacher */}
           <Grid item xs={12} md={3}>
             <Box>
               <Box className="nameHead">
@@ -176,6 +348,40 @@ const Home = () => {
                   }}
                   alt=""
                 />
+              </Box>
+            </Box>
+            <Box className="">
+              <Box className="animate_animated animate__fadeIn ">
+                <Paper className="applyBox">
+                  <h2
+                    style={{
+                      textAlign: "center",
+                      marginBottom: 10,
+                      marginTop: 0,
+                    }}
+                  >
+                    Apply Online
+                  </h2>
+                  <p style={{ textAlign: "center", margin: 0, padding: 0 }}>
+                    Summer 2022
+                  </p>
+                </Paper>
+              </Box>
+            </Box>
+
+            <Box sx={{ mt: 4 }}>
+              <Box className="animate_animated animate__fadeIn ">
+                <Paper className="applyBox">
+                  <h2
+                    style={{
+                      textAlign: "center",
+                      marginBottom: 10,
+                      marginTop: 0,
+                    }}
+                  >
+                    Online Class Guide
+                  </h2>
+                </Paper>
               </Box>
             </Box>
           </Grid>

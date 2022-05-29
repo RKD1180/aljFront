@@ -35,6 +35,17 @@
 .menuPaper{
     border: 1px solid red;
     padding: 1rem 1rem 2rem;
+    height: 10rem;
+    
+}
+.menuPaper:hover{
+    border: 1px solid blue;
+    transition: 0.3s;
+}
+.noticePaper{
+    border: 1px solid red;
+    padding: 1rem 1rem 2rem;
+    height: 15rem;
 }
 .nameHead{
     background-color: #1976D2;
@@ -42,4 +53,14 @@
     border-radius: 5px;
     padding: 2px 0px;
     
+}
+.applyBox{
+    padding: 10px;
+   
+}
+.applyBox:hover{
+    background-color: #a61e07;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
 }
