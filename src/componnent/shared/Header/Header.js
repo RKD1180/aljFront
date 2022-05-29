@@ -109,6 +109,21 @@ const Header = () => {
             <Link to="/" className="headerMenuItem">
               Home
             </Link>
+            <Link to="/" className="headerMenuItem">
+              Campus
+            </Link>
+            <Link to="/" className="headerMenuItem">
+              Gallery
+            </Link>
+            <Link to="/" className="headerMenuItem">
+              Golden Jubilee
+            </Link>
+            <Link to="/" className="headerMenuItem">
+              Contact
+            </Link>
+            <Link to="/" className="headerMenuItem">
+              SMS Panel
+            </Link>
             <Link to="/history" className="headerMenuItem">
               History
             </Link>

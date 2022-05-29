@@ -12,6 +12,7 @@ import prin from "../../asset/image/prin.png";
 import Footer from "../../componnent/shared/Footer/Footer";
 import Blog from "../../componnent/Blog/Blog";
 import "animate.css";
+import ImportentLinks from "./../../componnent/ImportentLinks/ImportentLinks";
 
 const Home = () => {
   const [blog, setBlog] = useState([]);
@@ -295,6 +296,7 @@ const Home = () => {
                   </Box>
                 </Paper>
               </Grid>
+
               <Box sx={{ ml: 2, mt: 2 }}>
                 <h2 style={{ marginLeft: 10 }}>Blog</h2>
                 <Grid container spacing={2}>
@@ -384,6 +386,14 @@ const Home = () => {
                 </Paper>
               </Box>
             </Box>
+
+            <Grid sx={{ mt: 3 }}>
+              <Box className="animate_animated animate__fadeInRightBig ">
+                <Paper sx={{ p: 2 }}>
+                  <ImportentLinks></ImportentLinks>
+                </Paper>
+              </Box>
+            </Grid>
           </Grid>
         </Grid>
       </Container>

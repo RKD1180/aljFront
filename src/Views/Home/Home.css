@@ -20,9 +20,13 @@
     align-items: center;
     
 }
+.cardMenuItem{
+    margin-bottom: 11px;
+}
 .menuItem{
     text-decoration: none;
     color: black;
+    
 }
 .menuItem:hover{
     text-decoration: underline;
@@ -45,7 +49,7 @@
 .noticePaper{
     border: 1px solid red;
     padding: 1rem 1rem 2rem;
-    height: 15rem;
+    height: 17rem;
 }
 .nameHead{
     background-color: #1976D2;
